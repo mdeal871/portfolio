@@ -35,7 +35,7 @@ export function Hero() {
               variants={fadeUp}
               className="font-display text-display-xl text-text max-w-xl text-balance"
             >
-              I build the circuit and the site.
+              Computer Engineer. Product Builder. Web Designer.
             </motion.h1>
 
             <motion.p
