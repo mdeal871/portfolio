@@ -25,21 +25,19 @@ export function SkillPinout({ groups }: { groups: SkillGroup[] }) {
           whileInView="show"
           viewport={viewportOnce}
           variants={fadeUp}
-          className="group flex flex-col gap-3 px-6 py-5 transition-colors duration-base hover:bg-surface-2 sm:flex-row sm:items-center sm:gap-6"
+          className="group flex flex-col gap-2 px-6 py-5 transition-colors duration-base hover:bg-surface-2 sm:flex-row sm:items-start sm:gap-6"
         >
-          <div className="flex items-center gap-3 sm:w-40 shrink-0">
-            <span className="font-mono text-mono-data text-text-muted">{group.pin}</span>
+          <div className="flex items-center gap-3 sm:w-56 shrink-0">
+            <span className="font-mono text-mono-data text-text-muted shrink-0">{group.pin}</span>
             <span
-              className="h-1.5 w-1.5 rounded-full bg-signal transition-shadow duration-base group-hover:shadow-glow-signal"
+              className="h-1.5 w-1.5 shrink-0 rounded-full bg-signal transition-shadow duration-base group-hover:shadow-glow-signal"
               aria-hidden
             />
-            <span className="h-px flex-1 bg-border sm:w-6 sm:flex-none" aria-hidden />
-            <h3 className="font-display text-heading-sm text-text whitespace-nowrap">
-              {group.label}
-            </h3>
+            <span className="hidden h-px w-4 shrink-0 bg-border sm:block" aria-hidden />
+            <h3 className="font-display text-heading-sm text-text">{group.label}</h3>
           </div>
 
-          <p className="font-mono text-mono-data text-text-muted">
+          <p className="font-mono text-mono-data text-text-muted sm:pt-0.5">
             {group.skills.join("  /  ")}
           </p>
         </motion.div>

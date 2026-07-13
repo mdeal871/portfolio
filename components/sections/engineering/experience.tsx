@@ -2,11 +2,13 @@
 
 import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { CompanyLogo } from "@/components/ui/company-logo";
 import { staggerContainer, fadeUp, viewportOnce } from "@/components/motion/variants";
 
 const ROLES = [
   {
     company: "Texas Instruments",
+    logo: "ti" as const,
     role: "Applications Engineer Intern — Battery Gauge Products",
     location: "Dallas, Texas",
     date: "May 2026 — Present",
@@ -18,6 +20,7 @@ const ROLES = [
   },
   {
     company: "NC State University Libraries",
+    logo: "ncsu" as const,
     role: "Student IT Technician",
     location: "Raleigh, North Carolina",
     date: "January 2025 — Present",
@@ -29,6 +32,7 @@ const ROLES = [
   },
   {
     company: "Superior Concrete of NC Inc.",
+    logo: "superior-concrete" as const,
     role: "Assistant Estimator",
     location: "Greenville, North Carolina (hybrid)",
     date: "February 2021 — Present",
@@ -63,12 +67,15 @@ export function Experience() {
               variants={fadeUp}
               className="rounded-lg border border-border bg-surface p-6 md:p-8"
             >
-              <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:justify-between">
-                <div>
-                  <h3 className="font-display text-heading-md text-text">{r.role}</h3>
-                  <p className="text-body-sm text-text-muted mt-1">
-                    {r.company} · {r.location}
-                  </p>
+              <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+                <div className="flex items-start gap-4">
+                  <CompanyLogo company={r.logo} />
+                  <div>
+                    <h3 className="font-display text-heading-md text-text">{r.role}</h3>
+                    <p className="text-body-sm text-text-muted mt-1">
+                      {r.company} · {r.location}
+                    </p>
+                  </div>
                 </div>
                 <span className="font-mono text-mono-label uppercase text-text-muted shrink-0">
                   {r.date}

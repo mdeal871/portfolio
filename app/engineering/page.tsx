@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { EngineeringPageHeader } from "@/components/sections/engineering/page-header";
+import { Education } from "@/components/sections/engineering/education";
 import { TimelineSection } from "@/components/sections/engineering/timeline-section";
 import { Experience } from "@/components/sections/engineering/experience";
 import { Projects } from "@/components/sections/engineering/projects";
@@ -18,6 +19,7 @@ export default function EngineeringPortfolioPage() {
   return (
     <>
       <EngineeringPageHeader />
+      <Education />
       <TimelineSection />
       <Experience />
       <Projects />

@@ -41,13 +41,13 @@ export function Navbar() {
     <header className="fixed top-0 inset-x-0 z-50 border-b border-border bg-bg/70 backdrop-blur-md">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-2.5 group">
-          <span className="relative flex h-6 w-6 items-center justify-center">
+          <span className="relative flex h-8 w-8 items-center justify-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/logo.svg"
               alt=""
-              width={24}
-              height={24}
+              width={32}
+              height={32}
               className="transition-transform duration-base group-hover:scale-110"
             />
           </span>
