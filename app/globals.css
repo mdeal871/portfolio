@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 247 248 250;
+  --surface: 255 255 255;
+  --surface-2: 239 241 245;
+  --border: 225 228 234;
+  --text: 16 21 28;
+  --text-muted: 91 100 114;
+  --signal: 47 111 224;
+  --signal-strong: 30 86 196;
+  --trace: 217 102 31;
+}
+
+.dark {
+  --bg: 11 15 20;
+  --surface: 16 21 28;
+  --surface-2: 22 28 37;
+  --border: 33 40 52;
+  --text: 231 236 243;
+  --text-muted: 139 149 165;
+  --signal: 91 158 248;
+  --signal-strong: 140 187 251;
+  --trace: 255 163 87;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--text));
+  font-feature-settings: "ss01" 1, "cv01" 1;
+}
+
+::selection {
+  background-color: rgb(var(--signal) / 0.25);
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--signal));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Subtle PCB via-dot grid, used as a background texture on select sections */
+.bg-trace-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgb(var(--border)) 1px, transparent 0);
+  background-size: 24px 24px;
+}
