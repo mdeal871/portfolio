@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { EASE_SIGNAL } from "@/components/motion/variants";
 
 interface WebsiteCardProps {
   title: string;
@@ -18,7 +19,7 @@ export function WebsiteCard({ title, description, tags, image, href = "#" }: Web
     <motion.a
       href={href}
       whileHover={{ y: -4 }}
-      transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.25, ease: EASE_SIGNAL }}
       className="group block overflow-hidden rounded-lg border border-border bg-surface hover:border-trace/40 hover:shadow-glow-trace transition-colors duration-base"
     >
       <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-border">

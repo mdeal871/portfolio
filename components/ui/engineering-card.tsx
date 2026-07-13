@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { EASE_SIGNAL } from "@/components/motion/variants";
 
 interface EngineeringCardProps {
   title: string;
@@ -40,7 +41,7 @@ export function EngineeringCard({ title, description, tags, image, href = "#" }:
     <motion.a
       href={href}
       whileHover={{ y: -4 }}
-      transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.25, ease: EASE_SIGNAL }}
       className={cn(
         "group flex flex-col overflow-hidden rounded-lg border border-border bg-surface",
         "hover:border-signal/40 hover:shadow-glow-signal transition-colors duration-base"

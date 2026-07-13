@@ -3,6 +3,7 @@
 import { forwardRef } from "react";
 import { motion, type HTMLMotionProps } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { EASE_STANDARD } from "@/components/motion/variants";
 
 type Variant = "primary" | "secondary" | "ghost" | "icon";
 type Size = "sm" | "md" | "lg";
@@ -69,7 +70,7 @@ export const LinkButton = forwardRef<HTMLAnchorElement, LinkButtonProps>(
       href={href}
       whileHover={{ scale: variant === "ghost" ? 1 : 1.02 }}
       whileTap={{ scale: 0.98 }}
-      transition={{ duration: 0.15, ease: [0.4, 0, 0.2, 1] }}
+      transition={{ duration: 0.15, ease: EASE_STANDARD }}
       className={baseClasses(variant, size, tone, className)}
       {...props}
     >
@@ -87,7 +88,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         whileHover={{ scale: variant === "ghost" ? 1 : 1.02 }}
         whileTap={{ scale: 0.98 }}
-        transition={{ duration: 0.15, ease: [0.4, 0, 0.2, 1] }}
+        transition={{ duration: 0.15, ease: EASE_STANDARD }}
         className={baseClasses(variant, size, tone, className)}
         {...props}
       >

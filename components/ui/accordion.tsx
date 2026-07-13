@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { EASE_SIGNAL } from "@/components/motion/variants";
 
 export interface AccordionItem {
   question: string;
@@ -45,7 +46,7 @@ export function Accordion({ items }: { items: AccordionItem[] }) {
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: "auto", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+                  transition={{ duration: 0.25, ease: EASE_SIGNAL }}
                   className="overflow-hidden"
                 >
                   <p className="pb-6 pl-10 max-w-2xl text-body-sm text-text-muted">

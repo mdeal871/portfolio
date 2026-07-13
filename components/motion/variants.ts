@@ -39,4 +39,4 @@ export const drawPath: Variants = {
   },
 };
 
-export const viewportOnce = { once: true, margin: "-80px" };
+export const viewportOnce = { once: true, margin: "-80px" } as const;

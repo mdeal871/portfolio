@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { EASE_SIGNAL } from "@/components/motion/variants";
 
 export function ThemeToggle() {
   const [isDark, setIsDark] = useState(true);
@@ -31,7 +32,7 @@ export function ThemeToggle() {
       <motion.span
         className="absolute top-0.5 h-5 w-5 rounded-full bg-signal"
         animate={{ left: isDark ? 26 : 2 }}
-        transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.25, ease: EASE_SIGNAL }}
       />
     </button>
   );

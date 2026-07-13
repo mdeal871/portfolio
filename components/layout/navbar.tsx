@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { LinkButton } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { EASE_SIGNAL } from "@/components/motion/variants";
 
 const LINKS = [
   { href: "/engineering", label: "Engineering" },
@@ -96,7 +97,7 @@ export function Navbar() {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.25, ease: EASE_SIGNAL }}
             className="overflow-hidden border-b border-border bg-bg md:hidden"
           >
             <ul className="flex flex-col px-6 py-4">

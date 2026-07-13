@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Badge } from "./badge";
+import { EASE_SIGNAL } from "@/components/motion/variants";
 
 export function Card({
   children,
@@ -39,7 +40,7 @@ export function ProjectCard({ title, description, category, tags = [], href }: P
     <motion.a
       href={href}
       whileHover={{ y: -4 }}
-      transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.25, ease: EASE_SIGNAL }}
       className={cn(
         "group block rounded-lg border border-border bg-surface p-6",
         "hover:border-signal/40 hover:shadow-glow-signal",
