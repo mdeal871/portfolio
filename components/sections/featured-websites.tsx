@@ -12,7 +12,7 @@ const SITES = [
       "Marketing site relaunch for a North Carolina concrete contractor — built to convert visitors into estimate requests.",
     tags: ["Web Design", "SEO", "Lead Gen"],
     image: "/images/websites/superior-concrete.jpg",
-    href: "/web-design#recent-projects",
+    href: "https://www.superiorconcreteofnc.com/",
   },
   {
     title: "TLowe Outfitters",
