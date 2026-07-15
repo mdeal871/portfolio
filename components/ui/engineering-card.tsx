@@ -5,17 +5,18 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { EASE_SIGNAL } from "@/components/motion/variants";
+import { BatteryGaugeDiagram, ArchivalSystemDiagram } from "@/components/ui/project-diagrams";
 
 interface EngineeringCardProps {
   title: string;
   description: string;
   tags: string[];
   image?: string;
+  diagram?: "battery-gauge" | "archival-system";
   href?: string;
 }
 
-// A deterministic little "chip" glyph so placeholder cards still feel
-// intentional rather than like a broken image — swap `image` in later.
+// Fallback for any future no-image project that doesn't specify a diagram.
 function PlaceholderArt({ seed }: { seed: string }) {
   const hash = seed.split("").reduce((a, c) => a + c.charCodeAt(0), 0);
   const rotate = (hash % 4) * 90;
@@ -36,7 +37,14 @@ function PlaceholderArt({ seed }: { seed: string }) {
   );
 }
 
-export function EngineeringCard({ title, description, tags, image, href = "#" }: EngineeringCardProps) {
+export function EngineeringCard({
+  title,
+  description,
+  tags,
+  image,
+  diagram,
+  href = "#",
+}: EngineeringCardProps) {
   return (
     <motion.a
       href={href}
@@ -56,6 +64,10 @@ export function EngineeringCard({ title, description, tags, image, href = "#" }:
             sizes="(min-width: 640px) 50vw, 100vw"
             className="object-cover transition-transform duration-slow ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-105"
           />
+        ) : diagram === "battery-gauge" ? (
+          <BatteryGaugeDiagram />
+        ) : diagram === "archival-system" ? (
+          <ArchivalSystemDiagram />
         ) : (
           <PlaceholderArt seed={title} />
         )}

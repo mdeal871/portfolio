@@ -87,6 +87,8 @@ export function WebsiteCaseStudy({
 
           <a
             href={href}
+            target="_blank"
+            rel="noreferrer"
             className="mt-7 inline-flex items-center gap-1.5 text-body-sm font-medium text-trace hover:underline underline-offset-4"
           >
             View live site

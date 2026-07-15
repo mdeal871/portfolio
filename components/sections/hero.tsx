@@ -35,7 +35,7 @@ export function Hero() {
               variants={fadeUp}
               className="font-display text-display-xl text-text max-w-xl text-balance"
             >
-              Computer Engineer. Web Designer.
+              I build the circuit and the site.
             </motion.h1>
 
             <motion.p
@@ -51,8 +51,8 @@ export function Hero() {
               <LinkButton href="/engineering" size="lg">
                 View engineering portfolio
               </LinkButton>
-              <LinkButton href="/web-design" size="lg" variant="secondary">
-                View web design portfolio
+              <LinkButton href="/web-design" size="lg" variant="secondary" tone="trace">
+                Explore web design portfolio
               </LinkButton>
             </motion.div>
 

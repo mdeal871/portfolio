@@ -16,6 +16,7 @@ const PROJECTS = [
       "Rebuilt the site around clear calls to action, a project gallery, and straightforward navigation to services, so a visitor can get from landing page to 'request an estimate' in a couple of clicks.",
     result:
       "A live, active marketing site the company uses as its primary way of fielding new project inquiries.",
+    href: "https://www.superiorconcreteofnc.com",
   },
   {
     title: "TLowe Outfitters",
@@ -29,6 +30,8 @@ const PROJECTS = [
       "Leaned into large-format photography, a bold type system, and a stripped-down navigation focused on the two things visitors actually want: what species are available, and how to book a hunt.",
     result:
       "A distinct, brand-led booking site that stands apart from the generic outfitter-directory look most competitors share.",
+    // WIP preview link — swap for the real domain once the site is finished and published.
+    href: "https://tloweoutfitters.vercel.app/",
   },
 ];
 

@@ -25,12 +25,14 @@ const PROJECTS = [
     description:
       "Custom PCB in Altium with ESD protection for a TI battery-gauge IC, paired with an embedded Linux driver for I2C communication.",
     tags: ["Altium", "Embedded Linux", "I2C"],
+    diagram: "battery-gauge" as const,
   },
   {
     title: "Digital project archival system",
     description:
       "Designed a document archival system and expanded server storage by 5TB for a construction firm's historical project records.",
     tags: ["Systems Design", "Infrastructure"],
+    diagram: "archival-system" as const,
   },
 ];
 
