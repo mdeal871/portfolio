@@ -101,6 +101,104 @@ function FlowDiagram({
   );
 }
 
+// A vertical stack of the same three nodes — used where edge labels are
+// long enough that a horizontal gap doesn't give them room to breathe.
+// The label sits beside the connector instead of cramped above it.
+function FlowDiagramVertical({
+  nodes,
+  edgeLabels,
+}: {
+  nodes: [NodeData, NodeData, NodeData];
+  edgeLabels: [string, string];
+}) {
+  const nodeW = 148;
+  const nodeH = 44;
+  const x = 26;
+  const ys = [8, 78, 148];
+
+  return (
+    <svg viewBox="0 0 220 200" className="h-full w-full" preserveAspectRatio="xMidYMid meet">
+      {ys.map((y, i) => (
+        <g key={i}>
+          <rect
+            x={x}
+            y={y}
+            width={nodeW}
+            height={nodeH}
+            rx="6"
+            fill="none"
+            stroke="rgb(var(--border))"
+            strokeWidth="1.5"
+          />
+          <circle cx={x + 10} cy={y + 10} r="2.5" fill="rgb(var(--signal))" />
+          <text
+            x={x + nodeW / 2}
+            y={y + nodeH / 2 - (nodes[i].sub ? 3 : -4)}
+            textAnchor="middle"
+            fontFamily="var(--font-jetbrains-mono), monospace"
+            fontSize="10.5"
+            fontWeight="500"
+            letterSpacing="0.02em"
+            fill="rgb(var(--text))"
+          >
+            {nodes[i].label}
+          </text>
+          {nodes[i].sub && (
+            <text
+              x={x + nodeW / 2}
+              y={y + nodeH / 2 + 13}
+              textAnchor="middle"
+              fontFamily="var(--font-jetbrains-mono), monospace"
+              fontSize="9"
+              fill="rgb(var(--text-muted))"
+            >
+              {nodes[i].sub}
+            </text>
+          )}
+        </g>
+      ))}
+
+      {[0, 1].map((i) => {
+        const y1 = ys[i] + nodeH;
+        const y2 = ys[i + 1];
+        const midX = x + nodeW / 2;
+        return (
+          <g key={i}>
+            <line
+              x1={midX}
+              y1={y1}
+              x2={midX}
+              y2={y2 - 6}
+              stroke="rgb(var(--signal))"
+              strokeWidth="1.5"
+              strokeDasharray="3 4"
+            />
+            <path
+              d={`M${midX - 4} ${y2 - 10} L${midX} ${y2 - 2} L${midX + 4} ${y2 - 10}`}
+              fill="none"
+              stroke="rgb(var(--signal))"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <text
+              x={midX + 14}
+              y={(y1 + y2) / 2 + 3}
+              textAnchor="start"
+              fontFamily="var(--font-jetbrains-mono), monospace"
+              fontSize="9"
+              letterSpacing="0.04em"
+              fill="rgb(var(--text-muted))"
+            >
+              {edgeLabels[i].toUpperCase()}
+            </text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
 export function BatteryGaugeDiagram() {
   return (
     <div className="flex h-full w-full items-center justify-center bg-surface-2 p-6">
@@ -119,7 +217,7 @@ export function BatteryGaugeDiagram() {
 export function ArchivalSystemDiagram() {
   return (
     <div className="flex h-full w-full items-center justify-center bg-surface-2 p-6">
-      <FlowDiagram
+      <FlowDiagramVertical
         nodes={[
           { label: "RECORDS", sub: "historical" },
           { label: "ARCHIVE", sub: "digital system" },
