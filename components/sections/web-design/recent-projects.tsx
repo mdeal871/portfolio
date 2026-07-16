@@ -33,6 +33,19 @@ const PROJECTS = [
     // WIP preview link — swap for the real domain once the site is finished and published.
     href: "https://tloweoutfitters.vercel.app/",
   },
+  {
+    title: "IEEE NC State Chapter Site",
+    industry: "Student organization · Team lead",
+    image: "/images/websites/ieee-ncsu.jpg",
+    imageAlt: "IEEE NC State chapter website homepage",
+    tags: ["Team Lead", "Content Strategy", "Web Development"],
+    goal:
+      "Give NC State's IEEE chapter a site strong enough to compete for best website at SoutheastCon — the organization's biggest regional stage.",
+    approach:
+      "Not a personal build — I led the team as Web Development Lead, managing content, information structure, and the people building it, rather than writing the code myself.",
+    result: "Won 1st place for Best Website at SoutheastCon 2026.",
+    href: "https://ieeencsu.com/",
+  },
 ];
 
 export function RecentProjects() {
@@ -43,7 +56,7 @@ export function RecentProjects() {
           eyebrow="Recent projects"
           title="Sites I've shipped"
           tone="trace"
-          description="Real, live client work — not mockups."
+          description="Client work, plus one I led rather than built myself — noted where that's the case."
         />
 
         <div className="mt-14 space-y-8">
