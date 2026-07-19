@@ -9,11 +9,11 @@ const PROJECTS = [
     industry: "Construction contractor",
     image: "/images/websites/superior-concrete.jpg",
     imageAlt: "Superior Concrete Inc. homepage",
-    tags: ["Web Design", "SEO", "Lead Generation"],
+    tags: ["HTML/CSS/JavaScript", "Responsive", "SEO", "Vercel", "Cloudflare", "Google Search Console"],
     goal:
       "Give a working North Carolina concrete contractor a site that actually reflects the scale of their work and turns visitors into estimate requests, not just a digital business card.",
     approach:
-      "Rebuilt the site around clear calls to action, a project gallery, and straightforward navigation to services, so a visitor can get from landing page to 'request an estimate' in a couple of clicks.",
+      "A complete solution, not just a design file: a custom responsive build with clear calls to action and a project gallery, deployed on Vercel with Cloudflare DNS and SSL, and submitted to Google Search Console so the site was set up to actually get found.",
     result:
       "A live, active marketing site the company uses as its primary way of fielding new project inquiries.",
     href: "https://www.superiorconcreteofnc.com",
@@ -23,11 +23,11 @@ const PROJECTS = [
     industry: "Hunting ranch & outfitter",
     image: "/images/websites/tlowe-outfitters.jpg",
     imageAlt: "TLowe Outfitters homepage",
-    tags: ["Web Design", "Branding"],
+    tags: ["HTML/CSS/JavaScript", "Responsive", "SEO", "Vercel", "Cloudflare", "Google Search Console"],
     goal:
       "Build a site for a South Texas hunting ranch that feels as premium as the land and the hunts it's selling — brand-forward, not another generic outfitter template.",
     approach:
-      "Leaned into large-format photography, a bold type system, and a stripped-down navigation focused on the two things visitors actually want: what species are available, and how to book a hunt.",
+      "End-to-end delivery: large-format photography and a bold type system built into a fully responsive custom site, with domain, hosting, and SEO fundamentals handled as part of the same project — not a separate line item.",
     result:
       "A distinct, brand-led booking site that stands apart from the generic outfitter-directory look most competitors share.",
     // WIP preview link — swap for the real domain once the site is finished and published.

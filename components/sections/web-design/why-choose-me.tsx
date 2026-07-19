@@ -1,39 +1,36 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircleMore, Wrench, Clock, Receipt } from "lucide-react";
+import { Workflow, Zap, Search, MessageCircleMore } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { staggerContainer, fadeUp, viewportOnce } from "@/components/motion/variants";
 
-// Direct, specific claims rather than a "me vs. agency" comparison table —
-// the claim is the differentiator, it doesn't need a competitor column to
-// make its point.
 const CLAIMS = [
   {
+    icon: Workflow,
+    tag: "End-to-end service",
+    claim: "I manage everything from the first idea to launching the finished website.",
+    support:
+      "No hand-offs between a designer, a developer, and an SEO person — one point of contact for the entire project.",
+  },
+  {
+    icon: Zap,
+    tag: "Modern performance",
+    claim: "Fast-loading websites built with clean code instead of heavy page builders.",
+    support:
+      "Lightweight, modern tools mean less to break and less weighing the site down — pages load fast on any connection.",
+  },
+  {
+    icon: Search,
+    tag: "SEO ready",
+    claim: "Every website is optimized for search engines and submitted to Google after launch.",
+    support: "Structure, metadata, sitemap, and indexing handled as part of the build, not an afterthought.",
+  },
+  {
     icon: MessageCircleMore,
-    tag: "No middleman",
-    claim: "You talk to the person building your site. Every time.",
-    support:
-      "No account manager, no hand-off to a subcontractor halfway through. If something needs to change, you tell me directly and it gets done.",
-  },
-  {
-    icon: Wrench,
-    tag: "Engineering background",
-    claim: "I test things the way an engineer tests things.",
-    support:
-      "I debug hardware for a living — I'm not going to ship a site that breaks on half the phones that load it.",
-  },
-  {
-    icon: Clock,
-    tag: "Real timelines",
-    claim: "Weeks, not a quarter.",
-    support: "Most small business sites are planned, built, and live inside 3–6 weeks.",
-  },
-  {
-    icon: Receipt,
-    tag: "Flat pricing",
-    claim: "One quote, agreed upfront. No retainer.",
-    support: "You know the number before I start. No scope creep billed by the hour.",
+    tag: "Personal collaboration",
+    claim: "Clients work directly with me throughout the project.",
+    support: "Clear communication and quick feedback — you're talking to the person building your site, every time.",
   },
 ];
 
@@ -41,7 +38,7 @@ export function WhyChooseMe() {
   return (
     <section className="relative border-t border-border bg-bg py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeading eyebrow="Why me" title="What you're actually getting" tone="trace" />
+        <SectionHeading eyebrow="Why work with me" title="What you're actually getting" tone="trace" />
 
         <motion.div
           variants={staggerContainer}

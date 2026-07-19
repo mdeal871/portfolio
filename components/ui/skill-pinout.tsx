@@ -15,7 +15,16 @@ export interface SkillGroup {
  * category name and its skills as inline mono text (not pills). Built to
  * replace the generic "icon in rounded square" SaaS feature-card pattern.
  */
-export function SkillPinout({ groups }: { groups: SkillGroup[] }) {
+export function SkillPinout({
+  groups,
+  tone = "signal",
+}: {
+  groups: SkillGroup[];
+  tone?: "signal" | "trace";
+}) {
+  const dotColor = tone === "trace" ? "bg-trace" : "bg-signal";
+  const glow = tone === "trace" ? "group-hover:shadow-glow-trace" : "group-hover:shadow-glow-signal";
+
   return (
     <div className="rounded-lg border border-border bg-surface divide-y divide-border overflow-hidden">
       {groups.map((group, i) => (
@@ -30,7 +39,7 @@ export function SkillPinout({ groups }: { groups: SkillGroup[] }) {
           <div className="flex items-center gap-3 sm:w-56 shrink-0">
             <span className="font-mono text-mono-data text-text-muted shrink-0">{group.pin}</span>
             <span
-              className="h-1.5 w-1.5 shrink-0 rounded-full bg-signal transition-shadow duration-base group-hover:shadow-glow-signal"
+              className={`h-1.5 w-1.5 shrink-0 rounded-full ${dotColor} transition-shadow duration-base ${glow}`}
               aria-hidden
             />
             <span className="hidden h-px w-4 shrink-0 bg-border sm:block" aria-hidden />

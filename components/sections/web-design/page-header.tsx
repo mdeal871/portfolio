@@ -5,20 +5,28 @@ import { ArrowRight } from "lucide-react";
 import { LinkButton } from "@/components/ui/button";
 import { fadeUp, staggerContainer } from "@/components/motion/variants";
 
-const PROCESS_PREVIEW = ["Planning", "Design", "Development", "SEO", "Launch", "Support"];
+const PROCESS_PREVIEW = [
+  "Discovery",
+  "Design",
+  "Development",
+  "Review",
+  "Launch",
+  "SEO & Indexing",
+  "Support",
+];
 
 // Deliberately structured differently from the engineering header: a
 // single strong CTA instead of a button pair, a credibility line naming
 // real client work right in the header, and a live preview strip of the
-// six-step process — the one thing that's actually unique to this page,
-// surfaced above the fold instead of buried below a scroll.
+// process — the one thing that's actually unique to this page, surfaced
+// above the fold instead of buried below a scroll.
 export function WebDesignPageHeader() {
   return (
     <section className="relative border-b border-border bg-bg">
       <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-28">
         <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-3xl">
           <motion.p variants={fadeUp} className="font-mono text-mono-label uppercase text-text-muted mb-6">
-            Portfolio / Web design
+            Portfolio / Website Launch &amp; Design
           </motion.p>
 
           <motion.h1
@@ -29,9 +37,12 @@ export function WebDesignPageHeader() {
           </motion.h1>
 
           <motion.p variants={fadeUp} className="mt-6 max-w-xl text-body-lg text-text-muted">
-            I design and build sites for small businesses — concrete
-            contractors, outfitters, local shops — that need a real online
-            presence, not a page that looks the same as everyone else's.
+            I build modern, high-performance websites for small businesses
+            that are professionally designed, search-engine optimized, and
+            fully deployed. My goal is to make the process effortless for
+            my clients by handling every technical detail — from domain
+            configuration to launch — so all you need to provide is photos
+            and feedback.
           </motion.p>
 
           <motion.div variants={fadeUp} className="mt-10 flex flex-wrap items-center gap-6">
