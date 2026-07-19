@@ -31,7 +31,7 @@ const PROJECTS = [
     result:
       "A distinct, brand-led booking site that stands apart from the generic outfitter-directory look most competitors share.",
     // WIP preview link — swap for the real domain once the site is finished and published.
-    href: "https://tloweoutfitters.vercel.app/",
+    href: "https://tloweoutfitters.com/",
   },
   {
     title: "IEEE NC State Chapter Site",
