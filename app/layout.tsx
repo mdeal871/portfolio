@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s — Mason Deal",
   },
   description:
-    "Computer engineering senior at NC State building embedded systems by day and premium websites for small businesses on the side.",
+    "Mason Deal: NC State computer engineering senior, former TI applications engineering intern, and Lenovo senior design Technical Project Manager. Open to Summer 2027 internships.",
   keywords: [
     "Mason Deal",
     "computer engineer",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Mason Deal — Computer Engineer & Web Developer",
     description:
-      "Computer engineering senior at NC State building embedded systems by day and premium websites for small businesses on the side.",
+      "Hardware, embedded software, and system integration — TI experience, Lenovo senior design, and websites for small businesses.",
     siteName: "Mason Deal",
     url: SITE_URL,
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mason Deal — Computer Engineer & Web Developer",
     description:
-      "Computer engineering senior at NC State building embedded systems by day and premium websites for small businesses on the side.",
+      "Hardware, embedded software, and system integration — TI experience, Lenovo senior design, and websites for small businesses.",
   },
   robots: { index: true, follow: true },
 };

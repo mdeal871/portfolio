@@ -37,13 +37,8 @@ export function WebDesignPageHeader() {
           </motion.h1>
 
           <motion.p variants={fadeUp} className="mt-6 max-w-xl text-body-lg text-text-muted">
-            I build modern, high-performance websites for small businesses
-            that are professionally designed, search-engine optimized, and
-            fully deployed. My goal is to make the process effortless for
-            my clients by handling every technical detail — from domain
-            configuration to launch — so all you need to provide is photos
-            and feedback.
-          </motion.p>
+              I design and launch websites for small businesses, from the first layout to domains, hosting, and search setup. You work directly with me throughout the project.
+            </motion.p>
 
           <motion.div variants={fadeUp} className="mt-10 flex flex-wrap items-center gap-6">
             <LinkButton href="#quote" size="lg" tone="trace">

@@ -13,13 +13,8 @@ export function WhyComputerEngineering() {
             I wanted to build the thing, not just the code running on top of it.
           </h2>
           <p className="mt-6 text-body-lg text-text-muted">
-            I've had a thing for technology since I was a kid. For a while I
-            was genuinely torn between computer science and computer
-            engineering — but I figured out pretty quickly that I like a
-            blend of both: getting hands-on with the actual hardware, and
-            writing the software that makes it do something. Computer
-            engineering was the one degree that didn't ask me to choose.
-          </p>
+              Computer engineering lets me work with the whole system: the circuit, the firmware, and the interface between them. I like tracing a problem from its symptoms to its cause, then testing whether the fix holds up.
+            </p>
         </motion.div>
       </div>
     </section>

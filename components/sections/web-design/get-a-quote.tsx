@@ -160,8 +160,12 @@ export function GetAQuote() {
           </Field>
 
           <Button type="submit" size="lg" tone="trace" className="w-full sm:w-auto">
-            Send quote request
+            Open email draft
           </Button>
+          <p className="text-body-sm text-text-muted">
+            Opens your email app with these details filled in. Review and send it there,
+            or email <a className="underline underline-offset-4" href="mailto:mdeal871@gmail.com">mdeal871@gmail.com</a> directly.
+          </p>
         </motion.form>
       </div>
     </section>

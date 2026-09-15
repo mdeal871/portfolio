@@ -49,9 +49,14 @@ const ENTRIES: TimelineEntry[] = [
     tone: "trace",
   },
   {
-    date: "May 2026 — Present",
+    date: "May 2026 — August 2026",
     title: "Applications Engineer Intern",
     subtitle: "Texas Instruments · Dallas, TX — Battery Gauge Products",
+  },
+  {
+    date: "Fall 2026 — Present",
+    title: "Technical Project Manager, Senior Design",
+    subtitle: "Lenovo / NC State · Automated liquid-cooling system testing",
   },
   {
     date: "Expected May 2027",

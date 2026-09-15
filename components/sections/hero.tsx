@@ -21,13 +21,13 @@ export function Hero() {
           <div>
             <motion.div
               variants={fadeUp}
-              className="inline-flex items-center gap-2.5 rounded-sm border border-border bg-surface/60 px-3 py-1.5 mb-8"
+              className="inline-flex max-w-full items-start gap-2.5 rounded-sm border border-border bg-surface/60 px-3 py-1.5 mb-8"
             >
-              <span className="font-mono text-mono-label text-text-muted">STATUS</span>
-              <span className="h-3 w-px bg-border" aria-hidden />
-              <span className="flex items-center gap-1.5 font-mono text-mono-label uppercase text-trace">
-                <span className="h-1.5 w-1.5 rounded-full bg-trace" aria-hidden />
-                Open for freelance work
+              <span className="pt-1 font-mono text-mono-label text-text-muted">STATUS</span>
+              <span className="mt-1 h-3 w-px shrink-0 bg-border" aria-hidden />
+              <span className="flex items-start gap-1.5 font-mono text-mono-label !leading-relaxed uppercase text-trace">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-trace" aria-hidden />
+                Lenovo-Sponsored Senior Design · Open to Summer 2027 Internships
               </span>
             </motion.div>
 
@@ -42,9 +42,7 @@ export function Hero() {
               variants={fadeUp}
               className="mt-6 max-w-lg text-body-lg text-text-muted"
             >
-              Computer engineering senior at NC State — designing embedded
-              hardware at Texas Instruments by day, and building premium
-              websites for small businesses on the side.
+              I'm Mason, a computer engineering senior at NC State. I work across embedded software, board-level hardware, and system integration — with experience at Texas Instruments and a Lenovo-sponsored senior design project.
             </motion.p>
 
             <motion.div variants={fadeUp} className="mt-10 flex flex-wrap gap-4">
@@ -70,7 +68,7 @@ export function Hero() {
               </div>
               <div>
                 <dt className="font-mono text-mono-label uppercase text-text-muted">Currently</dt>
-                <dd className="font-display text-heading-sm text-text mt-1">TI Intern</dd>
+                <dd className="font-display text-heading-sm text-text mt-1">Senior Design</dd>
               </div>
             </motion.dl>
           </div>
@@ -102,4 +100,3 @@ export function Hero() {
     </section>
   );
 }
-

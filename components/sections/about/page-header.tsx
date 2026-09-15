@@ -20,12 +20,10 @@ export function AboutPageHeader() {
               <span className="font-mono text-mono-label uppercase text-text-muted">About</span>
             </motion.div>
             <motion.h1 variants={fadeUp} className="font-display text-display-lg text-text max-w-xl text-balance">
-              Still figuring out exactly where I land — and I like it that way.
+              Hardware, software, and the systems where the two meet.
             </motion.h1>
             <motion.p variants={fadeUp} className="mt-6 max-w-lg text-body-lg text-text-muted">
-              I'm Mason — a computer engineering senior at NC State, currently
-              interning at Texas Instruments. Here's the longer version of
-              how I got here and what I actually care about.
+              I'm Mason, a computer engineering senior on NC State's accelerated bachelor's–master's track. I enjoy hands-on debugging, understanding how a product works, and helping people make it work better.
             </motion.p>
           </div>
 
@@ -33,13 +31,13 @@ export function AboutPageHeader() {
             <div className="absolute -inset-4 rounded-xl bg-signal/15 blur-2xl" aria-hidden />
             <div className="relative overflow-hidden rounded-xl border border-border bg-surface">
               <Image
-                src="/images/headshot.jpg"
-                alt="Portrait of Mason Deal"
-                width={886}
-                height={886}
+                src="/images/about-ti.jpeg"
+                alt="Mason Deal at Texas Instruments during his Summer 2026 internship"
+                width={1368}
+                height={1824}
                 sizes="(min-width: 768px) 40vw, 90vw"
                 priority
-                className="h-full w-full object-cover"
+                className="aspect-[4/5] w-full object-cover object-[center_65%]"
               />
             </div>
           </motion.div>

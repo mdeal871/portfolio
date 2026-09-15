@@ -19,7 +19,7 @@ export function FinalCta() {
             Let's build something that works.
           </h2>
           <p className="mt-4 text-body-lg text-text-muted">
-            Open to full-time and internship engineering roles, and taking
+            Open to Summer 2027 hardware and systems engineering internships, and taking
             on a limited number of freelance web design projects.
           </p>
 

@@ -18,7 +18,7 @@ export function ContactPageHeader() {
           </motion.h1>
 
           <motion.p variants={fadeUp} className="mt-6 text-body-lg text-text-muted">
-            I'm open to full-time and internship engineering roles, and I'm
+            I'm open to Summer 2027 hardware and systems engineering internships, and I'm
             taking on a limited number of freelance web design projects.
             Whichever brought you here, the fastest way to reach me is
             below — I read everything that comes in.

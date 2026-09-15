@@ -11,11 +11,11 @@ const ROLES = [
     logo: "ti" as const,
     role: "Applications Engineer Intern — Battery Gauge Products",
     location: "Dallas, Texas",
-    date: "May 2026 — Present",
+    date: "May 2026 — August 2026",
     bullets: [
-      "Collaborating cross-functionally with industrial and consumer electronics clients to diagnose, debug, and resolve application-level hardware failures and integration.",
-      "Developing an embedded Linux software driver to enable system compatibility and I2C serial communications for a specific TI battery gauge IC architecture.",
-      "Designing and validating a custom PCB via Altium, incorporating ESD protection architectures to guarantee reliable gauge data integrity in high-noise environments.",
+      "Worked with industrial and consumer electronics customers to debug hardware failures and system integration issues.",
+      "Developed an embedded Linux driver suite for I2C communication with a TI battery-gauge IC.",
+      "Designed and validated a custom PCB in Altium with ESD protection for reliable battery-gauge communication.",
     ],
   },
   {

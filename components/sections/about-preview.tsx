@@ -19,14 +19,7 @@ export function AboutPreview() {
             variants={fadeUp}
           >
             <p className="text-body-lg text-text-muted">
-              I'm a computer engineering senior at NC State, currently
-              interning on the battery-gauge team at Texas Instruments.
-              Outside of class and internships, I run web design projects
-              for small businesses — including the site you're on now.
-              I'm an Eagle Scout, treasurer of IEEE's NC State chapter, and
-              I like problems that live at the edge of hardware and
-              software, where a bad solder joint and a bad line of code
-              cause the exact same symptom.
+              I'm an Eagle Scout, IEEE NC State treasurer, and Alpha Phi Omega Education Vice President. Alongside engineering, I build websites for small businesses and make time for piano, lifting, gaming, and hunting.
             </p>
             <LinkButton href="/about" variant="ghost" className="mt-6">
               Read the full story →

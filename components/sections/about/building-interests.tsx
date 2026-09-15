@@ -9,23 +9,14 @@ export function BuildingInterests() {
     <section className="relative border-t border-border bg-bg py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-start">
-          <SectionHeading eyebrow="What I'm building toward" title="Personal electronics" className="max-w-none" />
+          <SectionHeading eyebrow="What I'm building toward" title="Products people rely on" className="max-w-none" />
 
           <motion.div initial="hidden" whileInView="show" viewport={viewportOnce} variants={fadeUp}>
             <p className="text-body-lg text-text-muted">
-              I'm still figuring out exactly where my interests land in this
-              industry — I don't think that's something you rush. But if I'm
-              honest about what's pulled at me the most, it's personal
-              electronics. They power the world and get used every single
-              day, and there's something about that scale that I find genuinely
-              interesting to work on.
+              Consumer electronics interest me because the engineering reaches people directly. My summer on TI's battery-gauge team showed me how hardware choices and software integration affect the reliability of a finished product.
             </p>
             <p className="mt-4 text-body-lg text-text-muted">
-              That's only gotten more concrete since starting my internship
-              at Texas Instruments, working on battery gauges — a component
-              most people never think about, but one that quietly decides
-              whether the device in their pocket actually works when they
-              need it to.
+              I'm now exploring those questions at a different scale through Lenovo-sponsored senior design: automated testing for datacenter liquid cooling systems. I'm looking for a Summer 2027 internship in hardware, embedded systems, or system integration.
             </p>
           </motion.div>
         </div>

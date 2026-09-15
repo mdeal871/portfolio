@@ -10,8 +10,8 @@ import { fadeUp, staggerContainer } from "@/components/motion/variants";
 // same mono label/value language as the pinout strips and FIG. captions
 // elsewhere on the site, instead of a third dot-eyebrow + headline + CTA.
 const SPECS = [
-  { label: "Status", value: "Actively interning" },
-  { label: "Focus", value: "Embedded systems, PCB design" },
+  { label: "Status", value: "Open to Summer 2027 internships" },
+  { label: "Focus", value: "Hardware, embedded systems, integration" },
   { label: "Education", value: "B.S. Computer Engineering, NC State" },
   { label: "GPA", value: "3.61" },
 ];
@@ -39,14 +39,13 @@ export function EngineeringPageHeader() {
             </motion.h1>
 
             <motion.p variants={fadeUp} className="mt-6 max-w-xl text-body-lg text-text-muted">
-              A full look at my technical background — timeline, experience,
-              projects, and the skills behind them.
+              Battery-gauge hardware and Linux drivers at Texas Instruments. Automated datacenter cooling tests with Lenovo. Coursework that brings circuits and code together.
             </motion.p>
 
             <motion.div variants={fadeUp} className="mt-10">
-              <LinkButton href="/documents/mason-deal-resume.pdf" download size="lg">
+              <LinkButton href="/documents/mason-deal-resume-and-portfolio.pdf" download size="lg">
                 <Download size={18} strokeWidth={1.5} className="mr-1" />
-                Download résumé
+                Download résumé & portfolio
               </LinkButton>
             </motion.div>
           </div>

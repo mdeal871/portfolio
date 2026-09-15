@@ -6,11 +6,11 @@ import { staggerContainer, fadeUp, viewportOnce } from "@/components/motion/vari
 const PRINCIPLES = [
   {
     tag: "On learning",
-    text: "We're never really finished learning — the world doesn't stop changing, so I try not to either. Staying useful in this field means staying open, not settling into whatever I already know.",
+    text: "Ask good questions, learn from the people around me, and put new ideas to work.",
   },
   {
     tag: "On problem-solving",
-    text: "I'm genuinely passionate about solving technical problems, and just as much about helping other people understand and use technology to make their day-to-day easier. Building, integrating, supporting — showing someone how something works — that's the actual reason I chose this industry.",
+    text: "Understand the problem, test assumptions, and explain the solution clearly enough for someone else to use it.",
   },
 ];
 

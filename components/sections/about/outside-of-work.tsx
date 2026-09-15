@@ -10,6 +10,7 @@ import { staggerContainer, fadeUp, viewportOnce } from "@/components/motion/vari
 // other section keeps vector icons; stacking both systems in one place
 // would look cluttered rather than charming.
 const HOBBIES = [
+  { emoji: "🌲", title: "Hunting", description: "Time outdoors, away from the screen." },
   {
     emoji: "🏋️",
     title: "Weightlifting",

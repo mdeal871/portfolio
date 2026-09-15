@@ -5,22 +5,13 @@ import { FileText, Download } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { staggerContainer, fadeUp, viewportOnce } from "@/components/motion/variants";
 
-const DOCUMENTS = [
-  {
-    fig: "DOC. 01",
-    title: "Résumé",
-    description: "Education, experience, skills, and honors — one page.",
-    href: "/documents/mason-deal-resume.pdf",
-    filename: "mason-deal-resume.pdf",
-  },
-  {
-    fig: "DOC. 02",
-    title: "Project portfolio",
-    description: "Full write-ups and photos for the embedded systems and logic design projects.",
-    href: "/documents/mason-deal-project-portfolio.pdf",
-    filename: "mason-deal-project-portfolio.pdf",
-  },
-];
+const DOCUMENTS = [{
+  fig: "DOC. 01",
+  title: "Résumé & project portfolio",
+  description: "Current résumé, Lenovo senior design, and selected coursework — three pages.",
+  href: "/documents/mason-deal-resume-and-portfolio.pdf",
+  filename: "mason-deal-resume-and-portfolio.pdf",
+}];
 
 export function Downloads() {
   return (

@@ -7,8 +7,12 @@ import { fadeUp, viewportOnce } from "@/components/motion/variants";
 interface CaseStudyProps {
   title: string;
   context: string;
-  image: string;
-  imageAlt: string;
+  id?: string;
+  image?: string;
+  caption?: string;
+  visualLabel?: string;
+  outcomeLabel?: string;
+  imageAlt?: string;
   tags: string[];
   problem: string;
   approach: string;
@@ -18,6 +22,10 @@ interface CaseStudyProps {
 }
 
 export function ProjectCaseStudy({
+  id,
+  caption,
+  visualLabel,
+  outcomeLabel = "Outcome",
   title,
   context,
   image,
@@ -31,29 +39,35 @@ export function ProjectCaseStudy({
 }: CaseStudyProps) {
   return (
     <motion.div
+      id={id}
       initial="hidden"
       whileInView="show"
       viewport={viewportOnce}
       variants={fadeUp}
-      className="rounded-lg border border-border bg-surface overflow-hidden"
+      className="scroll-mt-28 rounded-lg border border-border bg-surface overflow-hidden"
     >
       <div
         className={`grid grid-cols-1 lg:grid-cols-2 ${reverse ? "lg:[&>*:first-child]:order-2" : ""}`}
       >
         <div className="relative min-h-[280px] lg:min-h-full border-b border-border lg:border-b-0 lg:border-r">
-          <Image
+          {image ? <Image
             src={image}
-            alt={imageAlt}
+            alt={imageAlt || title}
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="object-cover"
-          />
+          /> : <div className="flex h-full min-h-[280px] flex-col justify-center gap-6 bg-surface-2 p-8 md:p-12">
+            <span className="font-mono text-mono-label uppercase text-text-muted">Texas Instruments</span>
+            <span className="font-display text-display-lg text-signal">{visualLabel}</span>
+            <p className="max-w-xs text-body-sm text-text-muted">Internship work · Summer 2026</p>
+          </div>}
+          {caption && <p className="absolute inset-x-0 bottom-0 bg-bg/90 p-4 text-xs leading-relaxed text-text">{caption}</p>}
         </div>
 
         <div className="p-6 md:p-10">
           <div className="flex items-center gap-2 mb-3">
             <span className="h-1.5 w-1.5 rounded-full bg-signal" aria-hidden />
-            <span className="font-mono text-mono-label uppercase text-text-muted">
+            <span className="font-mono text-mono-label !leading-relaxed uppercase text-text-muted">
               {context}
             </span>
           </div>
@@ -93,7 +107,7 @@ export function ProjectCaseStudy({
             </div>
             <div>
               <dt className="font-mono text-mono-label uppercase text-text-muted mb-1.5">
-                Outcome
+                {outcomeLabel}
               </dt>
               <dd className="text-body-sm text-text">{outcome}</dd>
             </div>
