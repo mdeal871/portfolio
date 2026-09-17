@@ -21,7 +21,7 @@ export function Footer() {
           <div className="max-w-sm">
             <div className="flex items-center gap-2.5 mb-3">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/logo.svg" alt="" width={20} height={20} />
+              <img src="/images/brand/logo.svg" alt="" width={20} height={20} />
               <span className="font-mono text-mono-label uppercase tracking-widest text-text">
                 Mason Deal
               </span>

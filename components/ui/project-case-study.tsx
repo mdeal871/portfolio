@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 import { fadeUp, viewportOnce } from "@/components/motion/variants";
 
 interface CaseStudyProps {
@@ -13,11 +14,13 @@ interface CaseStudyProps {
   visualLabel?: string;
   outcomeLabel?: string;
   imageAlt?: string;
+  imageFit?: "cover" | "contain";
   tags: string[];
   problem: string;
   approach: string;
   challenges: string[];
   outcome: string;
+  reportHref?: string;
   reverse?: boolean;
 }
 
@@ -30,11 +33,13 @@ export function ProjectCaseStudy({
   context,
   image,
   imageAlt,
+  imageFit = "cover",
   tags,
   problem,
   approach,
   challenges,
   outcome,
+  reportHref,
   reverse = false,
 }: CaseStudyProps) {
   return (
@@ -49,13 +54,13 @@ export function ProjectCaseStudy({
       <div
         className={`grid grid-cols-1 lg:grid-cols-2 ${reverse ? "lg:[&>*:first-child]:order-2" : ""}`}
       >
-        <div className="relative min-h-[280px] lg:min-h-full border-b border-border lg:border-b-0 lg:border-r">
+        <div className="relative min-h-[280px] border-b border-border bg-surface-2 lg:min-h-full lg:border-b-0 lg:border-r">
           {image ? <Image
             src={image}
             alt={imageAlt || title}
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
-            className="object-cover"
+            className={imageFit === "contain" ? `object-contain p-5 md:p-8 ${caption ? "pb-20 md:pb-20" : ""}` : "object-cover"}
           /> : <div className="flex h-full min-h-[280px] flex-col justify-center gap-6 bg-surface-2 p-8 md:p-12">
             <span className="font-mono text-mono-label uppercase text-text-muted">Texas Instruments</span>
             <span className="font-display text-display-lg text-signal">{visualLabel}</span>
@@ -112,6 +117,17 @@ export function ProjectCaseStudy({
               <dd className="text-body-sm text-text">{outcome}</dd>
             </div>
           </dl>
+
+          {reportHref && (
+            <a
+              href={reportHref}
+              download
+              className="mt-7 inline-flex min-h-11 items-center gap-2 rounded-sm border border-signal px-4 py-2.5 font-mono text-mono-label uppercase text-signal transition-colors hover:bg-signal hover:text-bg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signal focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
+            >
+              <Download className="h-4 w-4" aria-hidden />
+              Download project report
+            </a>
+          )}
         </div>
       </div>
     </motion.div>

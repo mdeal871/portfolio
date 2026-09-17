@@ -31,7 +31,7 @@ export function AboutPageHeader() {
             <div className="absolute -inset-4 rounded-xl bg-signal/15 blur-2xl" aria-hidden />
             <div className="relative overflow-hidden rounded-xl border border-border bg-surface">
               <Image
-                src="/images/about-ti.jpeg"
+                src="/images/about/ti-internship.jpeg"
                 alt="Mason Deal at Texas Instruments during his Summer 2026 internship"
                 width={1368}
                 height={1824}

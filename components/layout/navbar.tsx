@@ -44,7 +44,7 @@ export function Navbar() {
           <span className="relative flex h-8 w-8 items-center justify-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/logo.svg"
+              src="/images/brand/logo.svg"
               alt=""
               width={32}
               height={32}

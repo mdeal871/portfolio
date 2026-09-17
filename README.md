@@ -2,6 +2,16 @@
 
 Next.js 14 (App Router) + TypeScript + Tailwind CSS + Framer Motion.
 
+## Project structure
+
+- `app/` — routes, metadata, and global styles
+- `components/` — layout, page sections, motion helpers, and shared UI
+- `lib/` — project data and utilities
+- `public/images/` — grouped into `about`, `brand`, `projects`, and `websites`
+- `public/documents/` — the current combined résumé/portfolio and downloadable project reports
+- `docs/` — design and refinement notes
+- `scripts/` — source and asset validation
+
 ## Run locally
 
 ```bash
@@ -10,6 +20,8 @@ npm run dev
 ```
 
 Open http://localhost:3000.
+
+Run `npm run audit` before deployment to verify local asset references and key content checks.
 
 ## Before you deploy
 

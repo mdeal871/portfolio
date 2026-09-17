@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const assert = require('assert/strict');
-const root = __dirname;
+const root = path.resolve(__dirname, '..');
 let checked = 0;
 const files = [];
 function walk(dir) {

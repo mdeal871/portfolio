@@ -77,7 +77,7 @@ export function Hero() {
             <div className="absolute -inset-4 rounded-xl bg-signal/15 blur-2xl" aria-hidden />
             <div className="relative overflow-hidden rounded-xl border border-border bg-surface">
               <Image
-                src="/images/headshot.jpg"
+                src="/images/about/headshot.jpg"
                 alt="Portrait of Mason Deal"
                 width={886}
                 height={886}
