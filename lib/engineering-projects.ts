@@ -4,6 +4,10 @@ export const engineeringProjects = [
     title: "Embedded Linux battery-gauge driver",
     context: "Texas Instruments · Summer 2026",
     description: "An embedded Linux driver suite that enables I2C communication between a host system and a TI battery-gauge IC.",
+    image: "/images/projects/ti-linux-driver-architecture.png",
+    imageAlt: "Simplified architecture showing userspace and kernel drivers connecting through I2C to a battery gauge",
+    imageFit: "contain" as const,
+    caption: "Simplified architecture · Proprietary details omitted",
     tags: ["Embedded Linux", "I2C", "System Integration"],
     visualLabel: "Linux / I2C",
     problem: "Enable a Linux-based system to communicate with a TI battery gauge.",
@@ -16,6 +20,10 @@ export const engineeringProjects = [
     title: "ESD-protected battery-gauge PCB",
     context: "Texas Instruments · Summer 2026",
     description: "A custom PCB designed and validated in Altium to protect battery-gauge communication during electrostatic discharge events.",
+    image: "/images/projects/ti-esd-pcb-render.png",
+    imageAlt: "Redacted 3D rendering of the custom ESD-protected battery-gauge PCB",
+    imageFit: "contain" as const,
+    caption: "Redacted 3D render · Proprietary details omitted",
     tags: ["Altium", "PCB Design", "ESD Protection", "Validation"],
     visualLabel: "PCB / ESD",
     problem: "Maintain reliable gauge data communication when the system encounters electrostatic discharge.",
@@ -63,5 +71,33 @@ export const engineeringProjects = [
     approach: "Designed and breadboarded two concurrent state machines for user inputs and flashing sequences.",
     challenges: ["Handling asynchronous inputs alongside the flashing sequence.", "Troubleshooting and stabilizing the clock circuit."],
     outcome: "Demonstrated the working circuit. Potential improvements include synchronized hazard patterns and cleaner wire routing.",
+    reportHref: "/documents/ece-212-led-road-sign-report.pdf",
+  },
+];
+
+export const additionalVerilogProjects = [
+  {
+    title: "8x8 Dadda Multiplier",
+    context: "ECE 310 · Gate-level Verilog",
+    description:
+      "A structural multiplier that compresses partial products through staged Dadda reduction before a final ripple-carry addition.",
+    tags: ["Structural Verilog", "Arithmetic Circuits", "Testbench Verification"],
+    reportHref: "/documents/ece-310-dadda-multiplier-report.pdf",
+  },
+  {
+    title: "Dataflow Arithmetic Calculator",
+    context: "ECE 310 · Dataflow Verilog",
+    description:
+      "A controller-and-datapath design combining structural registers, signed arithmetic, capture sequencing, and a delayed valid signal.",
+    tags: ["Dataflow Modeling", "Control / Datapath", "2's Complement"],
+    reportHref: "/documents/ece-310-dataflow-calculator-report.pdf",
+  },
+  {
+    title: "Serial BCD ALU",
+    context: "ECE 310 · Behavioral Verilog",
+    description:
+      "A framed serial arithmetic system with SIPO input, parallel four-digit BCD addition or subtraction, and PISO output.",
+    tags: ["Serial Protocols", "BCD Arithmetic", "Finite State Machines"],
+    reportHref: "/documents/ece-310-serial-bcd-alu-report.pdf",
   },
 ];
