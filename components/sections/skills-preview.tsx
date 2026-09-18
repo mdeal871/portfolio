@@ -4,9 +4,9 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { SkillPinout } from "@/components/ui/skill-pinout";
 
 const GROUPS = [
-  { pin: "P1", label: "Embedded & firmware", skills: ["C/C++", "Verilog", "Assembly", "RTOS"] },
-  { pin: "P2", label: "Hardware design", skills: ["Altium", "KiCad", "SPICE", "Oscilloscopes"] },
-  { pin: "P3", label: "Software & tools", skills: ["Java", "Git", "Linux", "Vivado"] },
+  { pin: "P1", label: "Programming & software", skills: ["C/C++", "Python", "Verilog", "Java", "Git", "SSH"] },
+  { pin: "P2", label: "Hardware design", skills: ["Embedded Systems", "PCB Design", "FPGA/ASIC Design", "Microarchitecture"] },
+  { pin: "P3", label: "Tools & simulation", skills: ["Vivado", "Synopsys", "Questa", "Altium", "KiCad", "SPICE"] },
   { pin: "P4", label: "Web & design", skills: ["Next.js", "TypeScript", "Tailwind", "Figma"] },
 ];
 

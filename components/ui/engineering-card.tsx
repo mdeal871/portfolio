@@ -11,17 +11,26 @@ interface EngineeringCardProps {
   tags: string[];
   image?: string;
   imageAlt?: string;
+  imageFit?: "cover" | "contain";
   caption?: string;
   context?: string;
   visualLabel?: string;
   href: string;
 }
 
-export function EngineeringCard({ title, description, tags, image, imageAlt, caption, context, visualLabel, href }: EngineeringCardProps) {
+export function EngineeringCard({ title, description, tags, image, imageAlt, imageFit = "cover", caption, context, visualLabel, href }: EngineeringCardProps) {
   return (
     <Link href={href} className="group flex h-full flex-col overflow-hidden rounded-lg border border-border bg-surface transition-colors hover:border-signal/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-signal">
       <div className="relative aspect-[16/9] overflow-hidden border-b border-border bg-surface-2">
-        {image ? <Image src={image} alt={imageAlt || title} fill sizes="(min-width: 1024px) 550px, 100vw" className="object-cover transition-transform duration-300 group-hover:scale-[1.03]" /> : (
+        {image ? <Image
+          src={image}
+          alt={imageAlt || title}
+          fill
+          sizes="(min-width: 1024px) 550px, 100vw"
+          className={imageFit === "contain"
+            ? "object-contain p-4 transition-transform duration-300 group-hover:scale-[1.02]"
+            : "object-cover transition-transform duration-300 group-hover:scale-[1.03]"}
+        /> : (
           <div className="flex h-full flex-col justify-between p-7 md:p-9">
             <span className="font-mono text-mono-label uppercase text-text-muted">Texas Instruments / Applications Engineering</span>
             <span className="font-display text-display-md text-signal">{visualLabel}</span>

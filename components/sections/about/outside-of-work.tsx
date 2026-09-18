@@ -14,12 +14,12 @@ const HOBBIES = [
   {
     emoji: "🏋️",
     title: "Weightlifting",
-    description: "Most consistent habit I've got — good for the same reason debugging is.",
+    description: "A regular part of my routine and one of my favorite ways to reset.",
   },
   {
     emoji: "🎹",
     title: "Piano & making beats",
-    description: "Play piano, and mess around making beats when I want to build something that isn't code.",
+    description: "I've played piano for years, and I also enjoy making beats in my free time.",
   },
   {
     emoji: "🎮",

@@ -7,28 +7,28 @@ const GROUPS = [
   {
     pin: "P1",
     label: "Programming & software",
-    skills: ["C/C++", "Verilog", "Java", "Assembly", "Git", "GitHub"],
+    skills: ["C/C++", "Python", "Verilog", "Java", "Git", "SSH"],
   },
   {
     pin: "P2",
     label: "Hardware",
     skills: [
-      "Embedded Systems",
-      "Soldering",
-      "Digital Logic Design",
-      "Analog Circuit Design",
+      "Embedded Systems (MSP430/ARM)",
+      "PCB Design",
+      "FPGA/ASIC Design",
+      "Microarchitecture",
       "Microelectronics",
     ],
   },
   {
     pin: "P3",
     label: "Tools & simulation",
-    skills: ["AMD Vivado", "Altium", "KiCad", "SPICE", "Oscilloscopes", "Solidworks"],
+    skills: ["Vivado", "Synopsys", "Questa", "Altium Designer", "KiCad", "SPICE", "Oscilloscopes", "Logic Analyzers"],
   },
   {
     pin: "P4",
     label: "Operating systems",
-    skills: ["Windows", "macOS", "Linux (Ubuntu)", "Linux (RedHat)"],
+    skills: ["Windows", "macOS", "Linux (Ubuntu and Debian)"],
   },
 ];
 

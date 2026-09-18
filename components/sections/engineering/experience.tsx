@@ -13,9 +13,9 @@ const ROLES = [
     location: "Dallas, Texas",
     date: "May 2026 — August 2026",
     bullets: [
-      "Worked with industrial and consumer electronics customers to debug hardware failures and system integration issues.",
-      "Developed an embedded Linux driver suite for I2C communication with a TI battery-gauge IC.",
-      "Designed and validated a custom PCB in Altium with ESD protection for reliable battery-gauge communication.",
+      "Diagnosed and resolved application-level hardware, firmware, and system-integration issues for industrial and consumer-electronics customers, closing 26 customer support cases without further escalation.",
+      "Developed an embedded Linux kernel driver suite for a TI battery-gauge architecture, enabling I2C communication, device configuration, and system-level integration across two gauge platforms.",
+      "Designed and validated a custom PCB in Altium with integrated ESD-protection circuitry, maintaining reliable data communication during contact-discharge testing exceeding 15 kV.",
     ],
   },
   {
@@ -25,9 +25,9 @@ const ROLES = [
     location: "Raleigh, North Carolina",
     date: "January 2025 — Present",
     bullets: [
-      "Maintain and troubleshoot 1,000+ Windows, macOS, and Linux systems by diagnosing hardware, software, and network issues, improving device reliability, and minimizing downtime across campus workstations.",
-      "Resolve complex system failures through configuration analysis, system imaging, and documented troubleshooting procedures, preventing recurring technical issues.",
-      "Deliver responsive technical support in a customer-facing helpdesk environment, strengthening hardware diagnostics and technical communication skills.",
+      "Support an environment of more than 1,000 computing systems, diagnosing hardware, software, and network failures to maintain workstation availability across university libraries.",
+      "Resolve approximately 70 tickets per semester through configuration analysis, system imaging, component replacement, and troubleshooting.",
+      "Provide customer-facing technical support to students, faculty, staff, and large campus events, including technology setup and live troubleshooting for events ranging from 10 to 100+ attendees.",
     ],
   },
   {
@@ -37,9 +37,9 @@ const ROLES = [
     location: "Greenville, North Carolina (hybrid)",
     date: "February 2021 — Present",
     bullets: [
-      "Designed and implemented a digital project archival system to organize historical project records, significantly improving internal data retrieval and workflow efficiency.",
-      "Expanded company server storage infrastructure by 5 TB, enabling reliable long-term data retention.",
-      "Launched a redesigned company website and resolved software, server, and network access issues through systematic technical troubleshooting.",
+      "Prepare material takeoffs, prequalifications, and bid documentation for concrete construction projects, supporting project planning and competitive bidding.",
+      "Designed and implemented a digital project archive and expanded server capacity by 5 TB, improving long-term record retention and retrieval.",
+      "Designed and launched a new company website and resolved select business-critical software, storage, and network issues in-house, avoiding outside IT escalation.",
     ],
   },
 ];

@@ -27,7 +27,7 @@ const ENTRIES: TimelineEntry[] = [
     subtitle: "NC State University Libraries",
   },
   {
-    date: "Jan 2025 — Present",
+    date: "Apr 2026 — Present",
     title: "Treasurer, IEEE NC State",
     subtitle: "Previously Web Development Lead — 1st place, SoutheastCon 2026 (Best Website)",
     tone: "trace",

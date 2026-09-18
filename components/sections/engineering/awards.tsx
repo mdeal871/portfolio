@@ -11,6 +11,7 @@ const AWARDS = [
   "Dean's List — Spring 2025",
   "Dean's List — Spring 2026",
   "2026 NC State University Libraries Student Assistant of the Year",
+  "TI Engineer Your Future Participant",
   'SECU "People Helping People" Scholarship',
 ];
 
