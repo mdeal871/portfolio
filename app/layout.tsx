@@ -3,6 +3,7 @@ import { spaceGrotesk, inter, jetbrainsMono } from "@/lib/fonts";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { MotionProvider } from "@/components/motion/motion-provider";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const SITE_URL = "https://masondeal.dev"; // update once the domain is live
@@ -85,6 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </main>
           <Footer />
         </MotionProvider>
+        <Analytics />
       </body>
     </html>
   );
